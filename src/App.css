@@ -18,12 +18,82 @@
 	src: url(/font/Decima-mono.ttf); 
 }
 
-.container {
-  border: 2px groove #000000;
+.square1 {
+  background-color: white;
+  padding: 100px 100px;
+  border-radius: 15px;
+  border: 1.5px solid #b6b3b304;
+  box-shadow: 7px 5px 9px 5px rgba(34, 60, 80, 0.068);
+  margin-top: 160px;
+  margin-left: 107px;
+}
+
+.square2 {
+  position: absolute;
+  background-color: white;
+  padding: 150px 150px;
+  border-radius: 15px;
+  border: 1.5px solid #b6b3b304;
+  box-shadow: 7px 5px 9px 5px rgba(34, 60, 80, 0.068);
+  margin-top: 40px;
+  margin-left: 600px;
+}
+
+.circle1 {
+  background-color: white;
+  padding: 150px 150px;
+  border-radius: 150px;
+  border: 1.5px solid #b6b3b304;
+  box-shadow: 7px 5px 9px 5px rgba(34, 60, 80, 0.068);
+  margin-top: -60px;
+  margin-left: 180px;
+}
+
+.circle2 {
+  position: absolute;
+  background-color: white;
+  padding: 90px 90px;
+  border-radius: 150px;
+  border: 1.5px solid #b6b3b304;
+  box-shadow: 7px 5px 9px 5px rgba(34, 60, 80, 0.068);
+  margin-top: 550px;
+  margin-left: 780px;
+}
+
+.points1 {
+  position: absolute;
+  width: 80px;
+  margin-top: 48px;
+  margin-left: 150px;
+}
+
+.points2 {
+  position: absolute;
+  width: 80px;
+  margin-top: 438px;
+  margin-left: 473px;
+}
+
+.container1 {
+  position: relative;
   background-color: #000000;
-  padding: 100px 20px 10px 15px;
+  padding: 100px 28px 25px 15px;
   width: 268px;
   border-radius: 12px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.441);
+  margin-top: -270px;
+  margin-left: 500px;
+}
+
+.container2 {
+  position: relative;
+  background-color: #ffffff;
+  padding: 20px 6px 10px 15px;
+  width: 290px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.272);
+  margin-top: -17px;
+  margin-left: 500px;
 }
 
 .input {
@@ -58,6 +128,15 @@
   font-weight: 800;
   text-align: right;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.buttFalse {
+  background-color: white;
+  padding: 1px 30px;
+  border-radius: 9px;
+  border: 1.5px solid #b6b3b36e;
+  box-shadow: 1px 1px 4px 0px rgba(34, 60, 80, 0.13);
+  margin-left: 107px;
 }
 
 .butt {
