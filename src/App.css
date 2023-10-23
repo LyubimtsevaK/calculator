@@ -111,7 +111,9 @@
   font-weight: 900;
   text-align: right;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  outline: none;
 }
+
 
 .output {
   display: block;
@@ -128,6 +130,7 @@
   font-weight: 800;
   text-align: right;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  outline: none;
 }
 
 .buttFalse {
@@ -150,7 +153,13 @@
   border: 2px solid #ffffff;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   font-weight: 900;
+  cursor: pointer;
 }
+
+.butt:active {
+  box-shadow: 2px 2px 6px 0px rgba(34, 60, 80, 0.2);
+}
+
 .butt1 {
   font-family: Decima-mono;
   background-color: white;
@@ -160,20 +169,67 @@
   border-radius: 9px;
   padding: 5px 14px;
   border: 2px solid #ffffff;
+  cursor: pointer;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.butt1:active {
+  box-shadow: 2px 2px 6px 0px rgba(34, 60, 80, 0.2);
 }
 
 .butt2 {
   font-family: Decima-mono;
   background-color: white;
-  color: #595959;
+  color: #3f78a7;
   margin: 10px;
   font-size: 20px;
   border-radius: 9px;
   padding: 7px 53px;
   border: 2px solid #ffffff;
+  font-weight: 900;
+  cursor: pointer;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
+.butt2:active {
+  box-shadow: 2px 2px 6px 0px rgba(34, 60, 80, 0.2);
+}
+
+.butt3 {
+  font-family: Decima-mono;
+  background-color: rgba(45, 247, 240, 0.651);
+  color: #ffffff;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 9px;
+  padding: 8px 17px;
+  border: 2px solid #ffffff00;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.butt3:active {
+  box-shadow: 2px 2px 6px 0px rgba(34, 60, 80, 0.2);
+}
+
+.butt4 {
+  font-family: Decima-mono;
+  background-color: white;
+  color: #3f78a7;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 9px;
+  padding: 7px 17px;
+  border: 2px solid #ffffff;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.butt4:active {
+  box-shadow: 2px 2px 6px 0px rgba(34, 60, 80, 0.2);
+}
+
 .button {
   margin-top: 20px;
 }

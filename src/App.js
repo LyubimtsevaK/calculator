@@ -15,8 +15,14 @@ function App() {
 
   const clearInput = () => {
     setInputValue('');
+    setResult('');
   }
 
+  const clearOne = () => {
+    setInputValue(prevInputValue => prevInputValue.substring(0, prevInputValue.length - 1));
+
+  }
+  
 
   const math = require('mathjs');
 
@@ -25,7 +31,7 @@ function App() {
       const evaluatedResult = math.evaluate(inputValue);
       setResult(evaluatedResult.toString());
     } catch (error) {
-      setResult("Ошибка при вычислении");
+      setResult("(ಠ_ಠ)");
     }
   };
 
@@ -44,32 +50,32 @@ function App() {
         <button className='buttFalse'></button>
         <div className='button'>
           <button className='butt' onClick={clearInput}>С</button>
-          <button className='butt1' onClick={clearInput}>🠔</button>
+          <button className='butt1' onClick={clearOne}>🠔</button>
           <button className='butt' onClick={() => buttonNumber('%')}>%</button>
-          <button className='butt' onClick={() => buttonNumber('/')}>/</button>
+          <button className='butt' onClick={() => buttonNumber('/')}>÷</button>
         </div>
         <div>
-          <button className='butt' onClick={() => buttonNumber('7')}>7</button>
-          <button className='butt' onClick={() => buttonNumber('8')}>8</button>
-          <button className='butt' onClick={() => buttonNumber('9')}>9</button>
-          <button className='butt' onClick={() => buttonNumber('*')}>*</button>
+          <button className='butt4' onClick={() => buttonNumber('7')}>7</button>
+          <button className='butt4' onClick={() => buttonNumber('8')}>8</button>
+          <button className='butt4' onClick={() => buttonNumber('9')}>9</button>
+          <button className='butt' onClick={() => buttonNumber('*')}>×</button>
         </div>
         <div>
-          <button className='butt' onClick={() => buttonNumber('4')}>4</button>
-          <button className='butt' onClick={() => buttonNumber('5')}>5</button>
-          <button className='butt' onClick={() => buttonNumber('6')}>6</button>
+          <button className='butt4' onClick={() => buttonNumber('4')}>4</button>
+          <button className='butt4' onClick={() => buttonNumber('5')}>5</button>
+          <button className='butt4' onClick={() => buttonNumber('6')}>6</button>
           <button className='butt' onClick={() => buttonNumber('-')}>-</button>
         </div>
         <div>
-          <button className='butt' onClick={() => buttonNumber('1')}>1</button>
-          <button className='butt' onClick={() => buttonNumber('2')}>2</button>
-          <button className='butt' onClick={() => buttonNumber('3')}>3</button>
+          <button className='butt4' onClick={() => buttonNumber('1')}>1</button>
+          <button className='butt4' onClick={() => buttonNumber('2')}>2</button>
+          <button className='butt4' onClick={() => buttonNumber('3')}>3</button>
           <button className='butt' onClick={() => buttonNumber('+')}>+</button>
         </div>
         <div>
           <button className='butt2' onClick={() => buttonNumber('0')}>0</button>
           <button className='butt' onClick={() => buttonNumber('.')}>.</button>
-          <button className='butt' onClick={calculateResult}>=</button>
+          <button className='butt3' onClick={calculateResult}>=</button>
         </div>
       </div>
       <button className='circle1'></button>

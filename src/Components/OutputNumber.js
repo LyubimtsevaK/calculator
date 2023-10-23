@@ -5,7 +5,9 @@ const InputNumber = ({ value, buttonNumber }) => {
     const newValue = event.target.value;
     buttonNumber(newValue);
     console.log(typeof(buttonNumber(newValue)));
+    
     }
+    
     return (
         <div>
             <input 
@@ -13,6 +15,7 @@ const InputNumber = ({ value, buttonNumber }) => {
                 type="text"
                 value={value}
                 onChange={handleChange}
+                disabled
             />
         </div>
     );
