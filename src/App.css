@@ -294,8 +294,8 @@
   .container1 {
     position: relative;
     background-color: #000000;
-    padding: 100px 28px 25px 15px;
-    width: 268px;
+    padding: 20% 15% 10% -15%;
+    width: 75%;
     border-radius: 12px;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.441);
     margin-top: -15%;
@@ -305,8 +305,8 @@
   .container2 {
     position: relative;
     background-color: #ffffff;
-    padding: 20px 6px 10px 15px;
-    width: 290px;
+    padding: 20px 15% 10px -15%;
+    width: 81%;
     border-radius: 12px;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.272);
     margin-top: -17px;
